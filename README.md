@@ -1,8 +1,8 @@
-# lib-name
+# cross-log-name
 
-<!-- ![](https://img.shields.io/github/license/niktekusho/lib-name.svg) [![](https://img.shields.io/npm/v/lib-name.svg)](https://www.npmjs.com/package/lib-name) [![Build Status](https://travis-ci.org/niktekusho/lib-name.svg?branch=master)](https://travis-ci.org/niktekusho/lib-name) [![](https://img.shields.io/node/v/lib-name.svg)](https://www.npmjs.com/package/lib-name) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Maintainability](https://api.codeclimate.com/v1/badges/744538fb7227c1a86bea/maintainability)](https://codeclimate.com/github/niktekusho/lib-name/maintainability) [![](https://img.shields.io/bundlephobia/minzip/lib-name.svg)](https://bundlephobia.com/result?p=lib-name) -->
+<!-- ![](https://img.shields.io/github/license/niktekusho/cross-log-name.svg) [![](https://img.shields.io/npm/v/cross-log-name.svg)](https://www.npmjs.com/package/cross-log-name) [![Build Status](https://travis-ci.org/niktekusho/cross-log-name.svg?branch=master)](https://travis-ci.org/niktekusho/cross-log-name) [![](https://img.shields.io/node/v/cross-log-name.svg)](https://www.npmjs.com/package/cross-log-name) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![Maintainability](https://api.codeclimate.com/v1/badges/744538fb7227c1a86bea/maintainability)](https://codeclimate.com/github/niktekusho/cross-log-name/maintainability) [![](https://img.shields.io/bundlephobia/minzip/cross-log-name.svg)](https://bundlephobia.com/result?p=cross-log-name) -->
 
-> Lib Description
+> Get a cross-platform log file name
 
 ## Installation
 
@@ -11,13 +11,13 @@
 In your console, run the following command:
 
 ```sh
-$ npm install lib-name
+$ npm install cross-log-name
 ```
 
 You can also use `yarn` (like we do in this project):
 
 ```sh
-$ yarn add lib-name
+$ yarn add cross-log-name
 ```
 
 ## Usage

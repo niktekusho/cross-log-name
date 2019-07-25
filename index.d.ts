@@ -1,13 +1,49 @@
-declare namespace Lib {
+declare namespace getLogName {
 	/**
-	 * Interface
+	 * Options to pass to the main function
 	 */
-	export interface Interface {
+	export interface Options {
+		/**
+		 * Prefix of the log file name.
+		 *
+		 * @default 'app'
+		 */
+		basename?: string,
+		/**
+		 * Delimiter used to separate each date "component".
+		 *
+		 * @default '-''
+		 */
+		dateDelimiter?: string,
+		/**
+		 * Log file extension (including the first '.').
+		 *
+		 * @default '.log'
+		 */
+		extension?: string,
+		/**
+		 * In the date section of the file name, include the time segments (hours, minutes and seconds).
+		 *
+		 * @default true
+		 */
+		includeTime?: boolean,
+		/**
+		 * Delimiter used between 'basename' and the date section.
+		 *
+		 * @default '.'
+		 */
+		nameDelimiter?: string
 	}
 
 }
 
-// Here declare const or function based on what you export in index.js
-declare function Lib(): any;
+/**
+ * Get a log file name. This function throws if the date argument cannot be parsed into a date.
+ *
+ * This function does not create the file for you!
+ * @param date Optional date to use in the log name. Defaults to `now`.
+ * @param options Optional parameters to configure this function's behaviour.
+ */
+declare function getLogName(date?: Date | number, options?: getLogName.Options): string;
 
-export = Lib;
+export = getLogName;

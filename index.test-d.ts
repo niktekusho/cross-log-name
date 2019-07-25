@@ -1,6 +1,6 @@
 import {expectType} from 'tsd';
-import * as lib from '.';
+import * as getLogName from '.';
 
-// Sample test case
-// TODO
-// expectType<ValidationResult>(lib);
+expectType<string>(getLogName(undefined, {
+	basename: 'test'
+}));
