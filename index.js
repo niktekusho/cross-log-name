@@ -80,5 +80,9 @@ module.exports = (date, {
 
 	const datePart = dateSegments.join(dateDelimiter);
 
-	return `${basename}${nameDelimiter}${datePart}${extension}`;
+	if (basename && basename.trim().length > 0) {
+		return `${basename}${nameDelimiter}${datePart}${extension}`;
+	}
+
+	return `${datePart}${extension}`;
 };

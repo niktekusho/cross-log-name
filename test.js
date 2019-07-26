@@ -29,6 +29,39 @@ describe('Core library testing', () => {
 		})).toMatch(testFullLogName);
 	});
 
+	it('with basename set to null or undefined, it should return a name similar to "2019-07-25-15-00-00.log"', () => {
+		const testLogName = /\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}\.log$/;
+		expect(getLogName(null, {
+			basename: null
+		})).toMatch(testLogName);
+
+		expect(getLogName(null, {
+			basename: undefined
+		})).toMatch(testLogName);
+	});
+
+	it('with basename set to null or undefined, it should return a name similar to "2019-07-25-15-00-00.log"', () => {
+		const testLogName = /\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}\.log$/;
+		expect(getLogName(null, {
+			basename: null
+		})).toMatch(testLogName);
+
+		expect(getLogName(null, {
+			basename: undefined
+		})).toMatch(testLogName);
+	});
+
+	it('with basename set to a blank string, it should return a name similar to "2019-07-25-15-00-00.log"', () => {
+		const testLogName = /\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}\.log$/;
+		expect(getLogName(null, {
+			basename: ''
+		})).toMatch(testLogName);
+
+		expect(getLogName(null, {
+			basename: '  '
+		})).toMatch(testLogName);
+	});
+
 	it('with dateDelimiter set to \'.\', it should return a name similar to "app.2019.07.25.15.00.00.log"', () => {
 		const dottedLogName = /app\.\d{4}\.\d{2}\.\d{2}\.\d{2}\.\d{2}\.\d{2}\.log$/;
 		expect(getLogName(null, {
