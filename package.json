@@ -16,6 +16,7 @@
         "node": ">=8"
     },
     "scripts": {
+        "example": "node examples/example.js",
         "release": "np",
         "test": "xo && jest && tsd"
     },
