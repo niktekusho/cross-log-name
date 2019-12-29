@@ -1,6 +1,6 @@
 {
     "name": "cross-log-name",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Get a cross-platform log file name",
     "main": "index.js",
     "types": "index.d.ts",
